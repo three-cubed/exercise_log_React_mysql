@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleBlock component matches snapshot 1`] = `
+<div
+  className="titleBlock"
+>
+  <h2>
+    The Exercise Log
+  </h2>
+  <div
+    className="centred"
+  >
+    <button
+      className="titleBlockBtn"
+      style={
+        Object {
+          "backgroundColor": undefined,
+        }
+      }
+      type="button"
+    />
+  </div>
+</div>
+`;

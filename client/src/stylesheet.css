@@ -1,0 +1,84 @@
+.App {
+    background-color: rgb(221, 221, 221);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: calc(10px + 2vmin);
+}
+
+.exerciseEvent {
+    font-size: 1.2rem;
+    background-color: white;
+    width: 600px;
+    max-width: 92%;
+}
+
+.formContainer {
+    display:flex;
+    justify-content: center;
+    width: 67%;
+    min-width: 380px; 
+}
+
+#exerciseAdderForm {
+    font-size: 1.4rem;
+    border: 6px solid grey;
+    background-color: rgb(244, 244, 244);
+    padding: 3%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    top: 2.5vh;
+}
+
+#exerciseAdderForm input {
+    min-height: 6vh;
+    font-size: 1.2rem;
+    width: 96%;
+}
+
+#submissionBtn {
+    background-color: rgba(103, 189, 103, 0.74);
+    border-radius: 22%;
+    min-width: 200px;
+    font-size: 1.2rem;
+}
+
+.deletionBtn {
+    background-color: firebrick;
+    color: white;
+    position: relative;
+    left: 93%;
+    bottom: 56px;
+    font-size:9px;
+    /* text-align: center; */
+    height: 15px;
+    width: 22px; 
+    cursor: pointer;
+}
+
+.centred {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    min-height: 6vh;
+    font-size: 1.2rem;
+}
+
+.titleBlockBtn {
+    position: relative;
+    top: -2.5vh;
+    border-radius: 22%;
+    outline: none;
+}
+
+.achievementSpan {
+    position: relative;
+    left: -22px;
+}

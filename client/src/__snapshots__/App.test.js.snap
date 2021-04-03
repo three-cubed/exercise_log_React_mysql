@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component matches snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="titleBlock"
+  >
+    <h2>
+      The Exercise Log
+    </h2>
+    <div
+      className="centred"
+    >
+      <button
+        className="titleBlockBtn"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "rgba(103, 189, 103, 0.74)",
+          }
+        }
+        type="button"
+      >
+        Add a new exercise event
+      </button>
+    </div>
+  </div>
+  <br />
+</div>
+`;

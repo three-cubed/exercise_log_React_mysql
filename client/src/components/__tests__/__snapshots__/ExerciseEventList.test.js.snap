@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExerciseEventList component matches snapshot 1`] = `
+Array [
+  <div
+    className="exerciseEvent"
+    data-testid="exerciseEvent"
+    style={
+      Object {
+        "borderBottom": "solid 2px",
+        "borderLeft": "solid 16px",
+        "color": "green",
+      }
+    }
+  >
+    <p>
+        
+      <small>
+        12th March 2021
+      </small>
+      <br />
+        
+      <b>
+        Mock Running
+      </b>
+          
+      <br />
+      <button
+        className="deletionBtn"
+        data-testid="deletionBtn"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <span
+        className="achievementSpan"
+      >
+          
+        3 miles in 19:34
+      </span>
+    </p>
+  </div>,
+  <br />,
+  <div
+    className="exerciseEvent"
+    data-testid="exerciseEvent"
+    style={
+      Object {
+        "borderBottom": "solid 2px",
+        "borderLeft": "solid 16px",
+        "color": "purple",
+      }
+    }
+  >
+    <p>
+        
+      <small>
+        13th March 2021
+      </small>
+      <br />
+        
+      <b>
+        Mock Weights
+      </b>
+          
+      <br />
+      <button
+        className="deletionBtn"
+        data-testid="deletionBtn"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <span
+        className="achievementSpan"
+      >
+          
+      </span>
+    </p>
+  </div>,
+  <br />,
+]
+`;
