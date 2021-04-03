@@ -19,9 +19,9 @@ On first being run, the application will create a database (called `exercise_log
 *Before* first running the application, however, the user must create a `.env` file in the root directory, containing relevant MySQL connection information for the application to use: `MYSQL_HOST=`, `MYSQL_USER=`, and `MYSQL_PASSWORD=`. Note that these must be followed by strings in quotes. 
 
 An example would be:
-`MYSQL_HOST='localhost'`
-`MYSQL_USER='root'`
-`MYSQL_PASSWORD='hello4321'`
+`MYSQL_HOST='localhost'`  
+`MYSQL_USER='root'`  
+`MYSQL_PASSWORD='hello4321'`  
 
 Before first use of the application, the command `npm install` must be used on both the root directory and the client directory.
 

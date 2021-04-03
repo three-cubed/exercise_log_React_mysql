@@ -20,10 +20,7 @@ initializeDB();
 
 async function initializeDB() {
     await db.connect((err) => {
-        if(err) {
-            if (err) throw err;
-        }
-        console.log('MySQL connected...')
+        if (err) throw err;
     });
     try {
         db.query(`CREATE DATABASE IF NOT EXISTS exercise_log_sern;`);
@@ -31,11 +28,7 @@ async function initializeDB() {
         console.log(err);
     }
     await db.changeUser({database : 'exercise_log_sern'}, function(err) {
-        if (err) { 
-            console.log(err)
-        } else { 
-            console.log('connected to database: exercise_log_sern') 
-        }
+        if (err) console.log(err) 
     });
     let newTable = "CREATE TABLE IF NOT EXISTS exercises(id int PRIMARY KEY AUTO_INCREMENT, exerciseEventTitle VARCHAR(35), exerciseDate VARCHAR(35), achievement VARCHAR(99) DEFAULT NULL, colour VARCHAR(12))";
     db.query(newTable, (err, result) => {
@@ -47,21 +40,17 @@ app.get('/getExercise', async (req, res) => {
     let sql = 'SELECT * FROM exercises';
     let exerciseEvents;
     let query = await db.query(sql, (err, results) => {
-        console.log('/getExercise executing SELECT * FROM exercises');
-        // console.log(results)
         exerciseEvents = res.json(results);
     })
 });
 
 app.post('/exercisePost', (req, res) => {
     let colourToPost;
-    console.log('req.body.colour... '+req.body.colour)
     if (req.body.colour === '') {
         colourToPost = 'grey';
     } else {
         colourToPost = req.body.colour;
     }
-    console.log('colour to post: ' + colourToPost)
     let newExerciseEvent = { 
         exerciseEventTitle: req.body.exerciseEventTitle,
         exerciseDate: req.body.exerciseDate,
@@ -71,7 +60,6 @@ app.post('/exercisePost', (req, res) => {
     let sql = 'INSERT INTO exercises SET ?'; 
     let query = db.query(sql, newExerciseEvent, (err, result) => {
         if (err) throw err;
-        console.log('message from server.js: posted');
         res.send('message from server.js: posted');
     });    
 });
@@ -80,8 +68,7 @@ app.delete('/delete/:id', (req, res) => {
     let sql = `DELETE FROM exercises WHERE id=${req.params.id}`; 
     let query = db.query(sql, (err, result) => {
         if (err) throw err;
-        console.log('message from server.js: posted');
-        res.send('message from server.js: posted');
+        res.end();
     });    
 });
 
