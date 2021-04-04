@@ -7,7 +7,6 @@ const ExerciseEventList = ({ exercises, restateAfterDelete }) => {
                 <ExerciseEvent 
                 key={exercise.id} 
                 id={exercise.id}
-                icon={exercise.icon}
                 colour={exercise.colour} 
                 exerciseEventTitle={exercise.exerciseEventTitle} 
                 exerciseDate={exercise.exerciseDate} 
