@@ -32,4 +32,4 @@ Once the machine and application are prepared, as explained above, the applicati
 The application is not particularly complicated, but tests can be found in `/client/src/components/__tests__` and in `/client/src/App.test.js`. They can be run in the *client* directory by using `npm test`, or, for a more verbose version, `npm test -- --verbose`.
 
 ### Other notes
-The initial set-up uses the standard create-react-app package from NPM in the client sub-directory (including the various boilerplates.)
+The initial set-up uses the standard create-react-app package from NPM in the client directory.

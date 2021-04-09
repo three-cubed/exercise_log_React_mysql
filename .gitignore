@@ -3,7 +3,6 @@ node_modules
 dummies.txt
 dummies.js
 NOTES_TO_SELF.txt
-routes
 server_old.js
 
 # NPM create-react-app boilerplate for .gitignore:
