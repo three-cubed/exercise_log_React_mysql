@@ -2,10 +2,10 @@ This application is fully functional and ready to use. There are, however, vario
 
 ### Project overview
 This is a relatively simple "SERN stack" application, 
-i.e. a full-stack application using an **S**QL database + **E**xpress + **R**eact + **N**odeJS. 
+i.e. a full-stack application using an **S**QL database + **E**xpress + **R**eact + **N**ode.js.
 The basic concept of the application is to allow a user to record the exercise they have done.
 
-The application is a variation upon my similar project using a MongoDB database (which was thus a MERN stack application.)
+The application is a variation upon my similar project using a MongoDB database (which is thus a MERN stack application instead.)
 
 Users can create records of their exercise as 'exercise events' which are saved on the database. 
 The application displays existing records from the database. 

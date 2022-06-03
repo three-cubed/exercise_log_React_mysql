@@ -10,8 +10,6 @@ const db = mysql.createConnection({
     password: process.env.MYSQL_PASSWORD,
 })
 
-initializeDB();
-
 async function initializeDB() {
     console.log('db.js: initializing DB...');
     await db.connect((err) => {
@@ -30,6 +28,8 @@ async function initializeDB() {
         if (err) throw (err);
     })
 }
+
+initializeDB();
 
 module.exports = {
     db: db,    
